@@ -1,0 +1,94 @@
+# Name: Krushil Detroja
+# Branch: B.tech
+# Course: computer enginnering
+# IAR NO: 12414
+
+# LOGIC GATES:
+
+# AND gate
+def AND(a, b):
+    if a == 1 and b == 1:
+        return 1
+    else:
+        return 0
+
+# OR gate
+def OR(a, b):
+    if a == 1 or b == 1:
+        return 1
+    else:
+        return 0
+
+# NOT gate
+def NOT():
+    a = int(input("Enter a: "))
+    if a == 0:
+        return 1
+    else:
+        return 0
+
+# XOR gate
+def XOR(a, b):
+    if a == b:
+        return 0
+    else:
+        return 1
+
+# NAND gate
+def NAND(a, b):
+    if a == 1 and b == 1:
+        return 0
+    else:
+        return 1
+
+# NOR gate
+def NOR(a, b):
+    if a == 0 and b == 0:
+        return 1
+    else:
+        return 0
+
+# choice
+def choice():
+    global a, b
+    a = int(input("Enter s(0 or 1): "))
+    b = int(input("Enter r(0 or 1): "))
+
+
+print("1. AND")
+print("2. OR")
+print("3. NOT")
+print("4. XOR")
+print("5. NAND")
+print("6. NOR")
+
+ch = int(input("Enter your choice : "))
+
+if ch == 1:
+    choice()
+    z = AND(a, b)
+    print("Output of AND gate ", z)
+
+if ch == 2:
+    choice()
+    z = OR(a, b)
+    print("Output of OR gate ", z)
+
+if ch == 3:
+    z = NOT()
+    print("Output of NOT gate ", z)
+
+if ch == 4:
+    choice()
+    z = XOR(a, b)
+    print("Output of XOR gate ", z)
+
+if ch == 5:
+    choice()
+    z = NAND(a, b)
+    print("Output of NAND gate ", z)
+
+if ch == 6:
+    choice()
+    z = NOR(a, b)
+    print("Output of NOR gate ", z)
